@@ -1,0 +1,38 @@
+{
+  "name": "fusic/laravel-alter-send-email-validator",
+  "description": "Alter email validation at send email in Laravel",
+  "authors": [
+    {
+      "name": "tutida",
+      "email": "uchida@fusic.co.jp"
+    }
+  ],
+  "type": "library",
+  "require": {
+    "php": "^7.1.3",
+    "illuminate/support": ">=5.5.0||6.0.0",
+    "swiftmailer/swiftmailer": "~5.4|~6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5",
+    "orchestra/testbench": "^3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "LaravelAlterSendEmailValidator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelAlterSendEmailValidator\\Providers\\AlterEmailValidatorServiceProvider"
+      ]
+    }
+  },
+  "license": "MIT"
+}
